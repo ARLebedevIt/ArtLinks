@@ -1,0 +1,98 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-links {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+a:visited {
+  color: white;
+}
+
+#canvasWrapped canvas {
+  width: 100vh;
+  min-height: 100vh;
+  opacity: 0;
+  touch-action: none;
+  animation: fade-in 2s ease 0.2s forwards;
+}
+
+@supports (-webkit-touch-callout: none) {
+  #canvasWrapped canvas {
+    min-height: -webkit-fill-available;
+  }
+}
+
+.wrapperMobile::before {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  z-index: 100;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.255);
+}
+
+.links {
+  animation: fade-in-links 2s ease .5s forwards;
+  display: flex;
+  opacity: 0;
+  flex-direction: column;
+  font-family: fontDefault;
+  font-size: calc(150px - (150 - 200) * ((100vw - 320px) / (1920 - 1024)));
+  text-align: center;
+  font-weight: 1000;
+  letter-spacing: 10px;
+}
+
+.links a {
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 1px #000;
+  transition: all .5s linear;
+}
+
+.links a:nth-child(1):hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 9px 9px 1px #FF0303;
+}
+
+.links a:nth-child(2):hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 9px 9px 1px #13AFF0;
+}
+
+@media (max-width: 1024px) {
+  .links {
+    font-size: calc(115px - (115 - 180) * ((100vw - 320px) / (1024 - 650)));
+    letter-spacing: 5px;
+  }
+}
+
+@media (max-width: 650px) {
+  .links {
+    font-size: calc(68px - (68 - 170) * ((100vw - 320px) / (650 - 320)));
+    gap: 30px;
+    letter-spacing: 5px;
+  }
+  .links a:nth-child(1):hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 1px #FF0303;
+  }
+  .links a:nth-child(2):hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 1px #13AFF0;
+  }
+}
