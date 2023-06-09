@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ArtLinks/static/css/main.d2916521.css",
+    "main.js": "/ArtLinks/static/js/main.fb066a7f.js",
+    "static/js/787.2c3733f8.chunk.js": "/ArtLinks/static/js/787.2c3733f8.chunk.js",
+    "static/media/Basura Italic.ttf": "/ArtLinks/static/media/Basura Italic.e15c5729db59cec0b1e2.ttf",
+    "index.html": "/ArtLinks/index.html",
+    "main.d2916521.css.map": "/ArtLinks/static/css/main.d2916521.css.map",
+    "main.fb066a7f.js.map": "/ArtLinks/static/js/main.fb066a7f.js.map",
+    "787.2c3733f8.chunk.js.map": "/ArtLinks/static/js/787.2c3733f8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2916521.css",
+    "static/js/main.fb066a7f.js"
+  ]
+}
