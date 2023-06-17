@@ -2,6 +2,8 @@
       <img src="https://i.ibb.co/KF6bRRC/artLinks.jpg" alt="Project logo"  width="726">
 </p>
 
+[![en](https://img.shields.io/badge/lang-EN-lightgrey)](https://github.com/ARLebedevIt/ArtLinks/blob/main/README.en.md)
+
 <p align="center">
    <img src="https://img.shields.io/badge/version-v1.0-blue" alt="Version">
    <img src="https://img.shields.io/badge/%20license-MIT-green" alt="License">
